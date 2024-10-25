@@ -1,7 +1,7 @@
 node{
     
     stage('checkout'){
-      git 'https://github.com/shubhamkushwah123/insurance-project-demo.git'  
+      git 'https://github.com/PurnimaPatel1110/insurance-project-demo.git'  
         
     }
     stage('maven build'){
@@ -31,22 +31,22 @@ node{
         
     }
     
-    stage('checkout regression test source code'){
+   // stage('checkout regression test source code'){
         
      // git   'https://github.com/shubhamkushwah123/my-selenium-test-app.git'
-        git   'https://github.com/PurnimaPatel1110/insurance-project-demo.git'
+     //   git   'https://github.com/PurnimaPatel1110/insurance-project-demo.git'
         
         
-    }
+    //}
     
-    stage('build test script'){
+//    stage('build test script'){
         
-        sh 'mvn clean package assemply:single'
-    }
+ //       sh 'mvn clean package assemply:single'
+  //  }
     
-    stage('execute seleniu test script'){
+   // stage('execute seleniu test script'){
         
-        sh 'java -jar target/my-app-test-0.0.1-SNAPSHOT-jar-with-dependencies.jar'
-    }
+    //    sh 'java -jar target/my-app-test-0.0.1-SNAPSHOT-jar-with-dependencies.jar'
+   // }
   
 }
