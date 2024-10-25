@@ -33,7 +33,8 @@ node{
     
     stage('checkout regression test source code'){
         
-      git   'https://github.com/shubhamkushwah123/my-selenium-test-app.git'
+     // git   'https://github.com/shubhamkushwah123/my-selenium-test-app.git'
+        git   'https://github.com/PurnimaPatel1110/insurance-project-demo.git'
         
         
     }
